@@ -3,7 +3,7 @@ InstagramID
 
 A simple python script to get your Instagram ID
 
-<h4>How to run the script</h4>
+### How to run the script
 
 <p><code>python InstaUsr27.py [USER] <code></p>
 
