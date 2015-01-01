@@ -6,10 +6,11 @@ import sys
 #the user we want the info
 name = sys.argv[1]
 
+client_id = "Your client id!!!!!!"
 
 def extract(name=name):
     #generate the url
-    url = 'https://api.instagram.com/v1/users/search?q=' + name +'&client_id=%20c341c2133cea49f3a4e38e21d35cda88'
+    url = 'https://api.instagram.com/v1/users/search?q=' + name +'&client_id=' + client_id
 
     #open the url, read it and decode to UTF-8
     f = urllib.request.urlopen(url)
