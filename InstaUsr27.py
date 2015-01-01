@@ -5,9 +5,11 @@ import sys
 
 name = sys.argv[1]
 
+client_id = "Your client id!!!!"
+
 def extract(name=name):
     #get the .json with the search results
-    f = urllib2.urlopen('https://api.instagram.com/v1/users/search?q=' + name +'&client_id=%20c341c2133cea49f3a4e38e21d35cda88')
+    f = urllib2.urlopen('https://api.instagram.com/v1/users/search?q=' + name +'&client_id=' + client_id)
     #load the .json
     resultados = json.load(f)
 
