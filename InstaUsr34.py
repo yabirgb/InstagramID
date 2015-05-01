@@ -12,10 +12,9 @@ def extract(name=name):
     #generate the url
     url = 'https://api.instagram.com/v1/users/search?q=' + name +'&client_id=' + client_id
 
-    #open the url, read it and decode to UTF-8
-    f = urllib.request.urlopen(url)
-    data = f.read()
-    results = json.loads(data.decode('utf8'))
+    #open the url
+    data = requests.get(url)
+    results = data.json()
 
 
     #Uncomment this if you want to save the file of the search as a .json
